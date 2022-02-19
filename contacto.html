@@ -13,14 +13,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>IMA</title>
 </head>
-<body id="body" class="container-fluid m-0 p-0">
+<body class=" body container-fluid m-0 p-0">
   <!--inicio de encabezado-->
   <header>
   <div class="container-fluid">
   <div class="row">
-  <nav class="navbar navbar-expand-lg navbar-light bg-transparent fs-6">
-    <div class="container-fluid">
-      <img src="./assets/Logo- sin fondo-IMA-01.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+    <nav class="header__nav navbar navbar-expand-lg navbar-light bg-transparent ">
+     <div class="container-fluid">
+      <img src="./assets/Logo- sin fondo-IMA-01.png" alt="logoima"  class="header__nav__logo d-inline-block align-text-top">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,19 +28,19 @@
         <ul class="navbar-nav ms-auto">
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/index.html">HOME</a>
+            <a class="nav-link" href="index.html">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">ESPECIALIDADES</a>
+            <a class="nav-link" href="especialidades.html">ESPECIALIDADES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/staff.html">STAFF</a>
+            <a class="nav-link" href="staff.html">STAFF</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/tipss.html">TIPSS</a>
+            <a class="nav-link" href="tipss.html">TIPSS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contacto.html">CONTACTO</a>
+            <a class="nav-link" href="#">CONTACTO</a>
           </li>
         </ul>
         </ul>
@@ -55,10 +55,10 @@
 </div>
 </div>
 </header>
-<!--inicio del cuerpo prinicipal-->
-<main id="mainindex" class="container-fluid" >
+<!--inicio del cuerpo principal-->
+<main class="container-fluid" >
         <section class="contacto">
-           <form class="formulariodecontacto animate__animated animate__rotateInDownRight animate__slower	3s" action="https//ima.com/contacto.php" method="get">
+           <form class=" contacto__formulario animate__animated animate__rotateInDownRight animate__slower	3s" action="https//ima.com/contacto.php" method="get">
                <label for="Nombre">NOMBRE Y APELLIDO</label>
                <br>
                <input type="text" id="NOMBRE Y APELLIDO" placeholder="Ingresa tu nombre">
@@ -75,21 +75,19 @@
                <br>
                <textarea name="" id="TEXTBOX" cols="30" rows="10"></textarea>
                <br>
-               <input type="button" type="submit" value="ENVIAR">
-
+               <input class="contacto__formulario--boton" type="button" type="submit" value="ENVIAR">
            </form> 
        </section>
    </main>
-         <!--fin del cuerpo principal-->
- 
+    
 <!-- Footer -->
-<footer id="footermain" class="bg-transparent text-center">
+<footer class="footer bg-transparent text-center">
   <!--mapa del footer-->
   <div class="container-fluid row align-items-center justify-content-center ">
      <div class="col-l-8 col-md-6 ">
-         <iframe id="mapa"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13247.691234978189!2d-61.1002304!3d-33.8916418!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d99522855e5c4bf!2sIMA!5e0!3m2!1ses!2sar!4v1641935863680!5m2!1ses!2sar" style="border:0;" allowfullscreen="" height="auto" loading="lazy"></iframe>
-       </div>
-      <div id="datoscontacto" class="col-l-4 col-md-6">
+         <iframe class="footer__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13247.691234978189!2d-61.1002304!3d-33.8916418!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d99522855e5c4bf!2sIMA!5e0!3m2!1ses!2sar!4v1641935863680!5m2!1ses!2sar" style="border:0;" allowfullscreen="" height="auto" loading="lazy"></iframe>
+      </div>
+    <div class="footer__datoscontacto col-l-4 col-md-6">
         <!--tabla de datos-->
         <h6 class="text-uppercase fw-bold mb-4 mr-xl-6">
           Contacto
@@ -98,20 +96,20 @@
         <p>Horario:L A V 08:00 a 20:00</p>
         <p>institutomedicoasistencial@gmail.com</p>
         <p>TURNOS:2473409030</p>
-      </div>
+    </div>
       <!--redes sociales-->
       <div class="row">
-        <ul class="redessociales__enlaces">
-          <li><a href=https://api.whatsapp.com/send?phone=542473409030" target="_blank"> <img src="./assets/logowhatsapp.png" alt="logo de whatsapp" width="30" height="30"></a></li>
-          <li><a href="mailto:institutomedicoasistencial@gmail.com" target="_blank"> <img src="./assets/envelopemail.png" alt="logo mail" width="30" height="30"></a></li>
-          <li><a href="https://msng.link/o/?IMA=ig" target="_blank"> <img src="./assets/instagram.png" alt="logo instagram" width="30" height="30"> </a></li>
-          <li><a href="https://www.facebook.com/julian.rius.7" target="_blank"> <img src="./assets/facebook.png" alt="logo facebook" width="30"  height="30"></a></li>
-          <li><a href="https://twitter.com/ima" target="_blank"> <img src="./assets/twitter.png" alt="logo de twiter" width="30" height="30"></a></li>
+        <ul class="redessociales">
+          <li><a href=https://api.whatsapp.com/send?phone=542473409030" target="_blank"> <img src="./assets/logowhatsapp.png" alt="logo de whatsapp" class="redessociales__imagenes"></a></li>
+          <li><a href="mailto:institutomedicoasistencial@gmail.com" target="_blank"> <img src="./assets/envelopemail.png" alt="logo mail "class="redessociales__imagenes" ></a></li>
+          <li><a href="https://msng.link/o/?IMA=ig" target="_blank"> <img src="./assets/instagram.png" alt="logo instagram" class="redessociales__imagenes"> </a></li>
+          <li><a href="https://www.facebook.com/julian.rius.7" target="_blank"> <img src="./assets/facebook.png" alt="logo facebook"class="redessociales__imagenes" ></a></li>
+          <li><a href="https://twitter.com/ima" target="_blank"> <img src="./assets/twitter.png" alt="logo de twiter" class="redessociales__imagenes"></a></li>
         </ul>
       </div>
     </div> 
   <!-- Copyright -->
-  <div class="text-center bg-transparent fs-6">
+  <div class="footer__copyright text-center bg-transparent ">
     © 2022 Copyright:IMA SALUD
   </div>
 </footer>

@@ -11,56 +11,63 @@
 }
 
 
-    #body{
+    .body{
         background-image: linear-gradient(to bottom, #e6dae8, #ded2e1, #d6cada, #cec2d3, #c6bacc, #c5bacd, #c5bacd, #c4bace, #cac2d6, #d0c9de, #d7d1e6, #ddd9ee);
-
     }
+    /*propiedades header y componentes*/
+
     header{
         background-image: linear-gradient(to right bottom, #bbb3be, #bbb2c0, #bbb0c3, #baafc5, #b9aec8, #b7abca, #b4a7cd, #b1a4cf, #ac9ed1, #a897d3, #a291d4, #9d8bd6);
         font-style: italic;
-        }
+    }
+
+    .header__nav{
+        font-size: 1rem;
+        color: #38276e;
+    }
     
+    .header__nav__logo{
+        width: 75px;
+        height: 75px;
+    }
+
     #header__h1{
         color: #632e79d0;
         font-style: italic;
         font-weight: bold;
     }
 
-    #mainindex{
-        background-position: center;
-        display: grid;
-        grid-template-rows: auto;
-        align-items: center;
-        overflow: hidden;
-        margin: auto;
-
-    }
-
-    .firstseccion{
-        display: grid;
-    }
-
-    .secondseccion{
-        display: grid;
-        padding-top: 20px;
-    }
-    .titulosseccion{
-        font-size: 3rem;
-        color: rgb(52, 38, 58);
-        font-weight:bold;
-        text-align: center;
+    /*propiedades customizadas carrousel bootstrap*/
+    
+    .carousel-inner{
+        height: 800px;
+        width:100%;
+        object-fit: cover;
     }
     
-    .texto{
+    .carousel-inner__imagenes{
+        height: 900px;
+    }
+
+    #carousel-inner__encabezado{
+        font-size: 3rem;
+        color: #502f5ef5;
+    }
+      
+    .carousel-inner__texto{
         font-size: 2rem;
         color:rgb(43, 2, 82);
         text-align: center;
         margin: 5px;
         padding-bottom: 250px;
-
+    }
+   
+    #carousel-inner__encabezado2{
+        font-size: 3rem;
+        color:#a392aaf5 ;
     }
 
-    .texto2{
+    .carousel-inner__texto2{
         font-size: 2.5rem;
         color:rgb(239, 236, 241);
         text-align: center;
@@ -69,48 +76,87 @@
 
     }
 
-    #encabezadoslabel1{
-     font-size: 2.5rem;
-     color: #502f5ef5;
-
+    .carousel-inner__imagenes--especialidades{
+        height: 800px;
     }
     
-    #encabezadoslabel2{
+    #carousel-inner__encabezado2--especialidades{
+        padding-bottom: 30%;
+        padding-right: 25%; 
+        font-weight: bold;
         font-size: 3rem;
-        color:#a392aaf5 ;
-   
-       }
-    
-    .contacto{
-        padding: 50px;
+        color: #2f0341;
+        font-weight: bold;  
     }
-    #footermain{
+
+    /*propiedades de las cards de staff*/
+
+    .card{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+ 
+    .card-title{
+        text-align: center;
+        color: #2f0341;
+    }
+
+    .card-text{
+       text-align: center;
+       font-weight: bold;
+    }
+
+    /*propiedades formulario de contacto*/
+    
+    .contacto{  
+        padding: 50px;
+        color: #2f0341;
+    }
+
+    .contacto__formulario{
+       text-align: center;
+    }
+
+    .contacto__formulario--boton{
+        color: #ffffff;
+        border-radius: 25%;
+        background-color: #511569;
+        overflow-x: hidden;
+    }
+
+    /*propiedades footer*/
+
+    .footer{
         background-image: linear-gradient(to right bottom, #bbb3be, #bbb2c0, #bbb0c3, #baafc5, #b9aec8, #b7abca, #b4a7cd, #b1a4cf, #ac9ed1, #a897d3, #a291d4, #9d8bd6);
         color: #632e79d0;
         padding-left: 25px;
         padding-top: 5px;
-
-
     }
-    .redessociales__enlaces{
+  
+    .redessociales{
         display: flex;
         font-weight: bold;
         color: rgb(6, 0, 12);
         justify-content:space-evenly;
         align-items: center;
         padding-top: 10px;
-        }
+    }
 
-    #datoscontacto{
+    .redessociales__imagenes{
+        height: 30px;
+        width: 30px;
+    }
+
+    .footer__datoscontacto{
         font-size: 1em;
     }
-    
-    .carousel-inner{
-        height: 800px;
-        width:100%;
-        object-fit: cover;
 
+    .footer__copyright{
+        font-size: 1rem;
+        color: rgb(71, 8, 100);
+        border-top: solid #2f0341;   
     }
+    
     
 
     @media (min-width: 568px) and (max-width: 767px){
@@ -121,83 +167,55 @@
         font-size: 1.5rem;
         }
 
-        .titulosseccion{
-            font-size: 1.5rem;
-            }
-    
-        .texto{
+
+       .carousel-inner__texto{
         font-size: 1rem;
         }
 
-
-        #datoscontacto{
-            display:none !important; 
-
-        }
-
-
-        .texto{
+       .carousel-inner__texto{
             font-size: 1.5rem;
             color:rgb(43, 2, 82);
             text-align: center;
             margin: 5px;
             padding-bottom:300px;
-    
         }
     
-        .texto2{
+       .carousel-inner__texto2{
             font-size: 1.5rem;
             color:rgb(130, 65, 184);
             text-align: center;
             margin: 5px;
             padding-bottom: 600px;
-    
-        }
-        
-
-        #tcardio{
-            padding-bottom: 50%;
-            padding-right: 25%;
-            font-weight: bold;
         }
     
-        #tcirugia{
-            padding-bottom: 50%;
-            padding-right: 25%;
-            font-weight: bold;
-        }
-    
-        #tendocrinología{
-            padding-bottom: 50%;
-            padding-right: 25%;  
-            font-weight: bold;
-        }
-        
-        #tgineco{
+        #carousel-inner__encabezado2--especialidades{
             padding-bottom: 50%;
             padding-right: 25%; 
             font-weight: bold;
+            font-size: 2.5rem;
+            color: #2f0341;
+            font-weight: bold;     
         }
-        #tnut{
-            padding-bottom: 50%;
-            padding-right: 25%;  
-            font-weight: bold;
-        }
+        
+        .card{
+            margin-top: 15px;
+            margin-bottom: 15px;
     
-        #tpsico{
-            padding-bottom: 50%;
-            padding-right: 25%; 
-            font-weight: bold; 
         }
      
         .contacto{
             padding: 150x;
         }
 
-        #mapa{
+        .footer__datoscontacto{
+            display:none !important; 
+        }
+
+        .footer__mapa{
             max-width: 50%;
             max-height: 30%;
         }
+
 }
 
 @media (min-width: 320px) and (max-width: 567px){
@@ -208,86 +226,56 @@
     font-size: 1.5rem;
     }
 
-    .titulosseccion{
-        font-size: 1.5rem;
-        }
-
-    .texto{
-    font-size: 1rem;
+    .header__nav__logo{
+        width: 50px;
+        height: 50px;
     }
 
-
-    #datoscontacto{
-        display:none !important; 
-
-    }
-
-
-    .texto{
+   .carousel-inner__texto{
         font-size: 1rem;
         color:rgb(43, 2, 82);
         text-align: center;
         margin: 5px;
         padding-bottom: 300px;
-
     }
 
-    .texto2{
+   .carousel-inner__texto2{
         font-size: 1rem;
         color:rgb(130, 65, 184);
         text-align: center;
         margin: 5px;
         padding-bottom: 600px;
-
-    }
-    
-    #tcardio{
-        padding-bottom: 75%;
-        padding-right: 25%;
     }
 
-    #tcirugia{
+    #carousel-inner__encabezado2--especialidades{
         padding-bottom: 75%;
-        padding-right: 25%;  
-    }
-
-    #tendocrinología{
-        padding-bottom: 75%;
-        padding-right: 25%;  
-    }
-    
-    #tgineco{
-        padding-bottom: 75%;
-        padding-right: 25%;  
-    }
-
-    #tnut{
-        padding-bottom: 75%;
-        padding-right: 25%;  
-    }
-
-    #tpsico{
-        padding-bottom: 75%;
-        padding-right: 25%;  
+        padding-right: 25%; 
+        font-size: 1.5rem;
+        color: #2f0341;
+        font-weight: bold;  
     }
 
     .card{
-        width: 150px;
-
+        width: 138px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        overflow-x: hidden;
     }
+
     .card-title{
         font-size: 0.5rem;
-
-
     }
 
     .card-text{
-        font-size: 0.05rem;
-
+        font-size: 0.5rem;
     }
     
-    #mapa{
+    .footer__datoscontacto{
+        display:none !important; 
+    }
+
+    .footer__mapa{
         max-width: 50%;
-        max-height: 30%;
+        max-height: 82px;
     }
 }
