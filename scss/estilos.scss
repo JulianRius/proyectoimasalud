@@ -25,23 +25,28 @@
             color: #632e79d0;
             font-style: italic;
             font-weight: bold;
-
-            
-        }
+           
+                @media (min-width: 568px) and (max-width: 767px){
+                font-size: 1.5rem;
+                }
+                @media (min-width: 320px) and (max-width: 567px){
+                font-size: 1.25rem;
+                }    
+            }
         .header__nav{
             font-size: 1rem;
             color: #38276e;
             .header__nav__logo{
                 width: 75px;
                 height: 75px;
+
+                @media (min-width: 320px) and (max-width: 567px){
+                width: 50px;
+                height: 50px;
+            }
             }
         }
     }
-
-
-    
-
-    
 
     /*propiedades customizadas carrousel bootstrap*/
     
@@ -62,6 +67,21 @@
             text-align: center;
             margin: 5px;
             padding-bottom: 250px;
+           
+            @media (min-width: 568px) and (max-width: 767px){
+                font-size: 1rem;
+                color:rgb(43, 2, 82);
+                text-align: center;
+                margin: 5px;
+                padding-bottom:300px;
+            }
+            @media (min-width: 320px) and (max-width: 567px){
+            font-size: 1rem;
+            color:rgb(43, 2, 82);
+            text-align: center;
+            margin: 5px;
+            padding-bottom: 300px;
+        }
         }
         #carousel-inner__encabezado2{
             font-size: 3rem;
@@ -73,42 +93,86 @@
             text-align: center;
             margin: 5px;
             padding-bottom: 300px;
+            
+            @media (min-width: 568px) and (max-width: 767px){
+            font-size: 1.5rem;
+            color:rgb(130, 65, 184);
+            text-align: center;
+            margin: 5px;
+            padding-bottom: 600px;
+        }
+            @media (min-width: 320px) and (max-width: 567px){
+            font-size: 1rem;
+            color:rgb(130, 65, 184);
+            text-align: center;
+            margin: 5px;
+            padding-bottom: 600px;
+        }
         }
         .carousel-inner__imagenes--especialidades{
             height: 800px;
         }
-        
         #carousel-inner__encabezado2--especialidades{
             padding-bottom: 30%;
             padding-right: 25%; 
             font-weight: bold;
             font-size: 3rem;
             color: #2f0341;
-            font-weight: bold;  
+            font-weight: bold;
+            
+            @media (min-width: 568px) and (max-width: 767px){
+            padding-bottom: 50%;
+            padding-right: 25%; 
+            font-weight: bold;
+            font-size: 2.5rem;
+            color: #2f0341;
+            font-weight: bold;     
         }
+            @media (min-width: 320px) and (max-width: 567px){
+            padding-bottom: 75%;
+            padding-right: 25%; 
+            font-size: 1.5rem;
+            color: #2f0341;
+            font-weight: bold;  
+        } 
+       }
     }
     
-
-      
-   
-
-
 
     /*propiedades de las cards de staff*/
 
     .card{
         margin-top: 10px;
         margin-bottom: 10px;
+
+        @media (min-width: 568px) and (max-width: 767px){
+        width: 138px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        overflow-x: hidden;
+    }
+        @media (min-width: 320px) and (max-width: 567px){
+        width: 138px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        overflow-x: hidden;
+    }
     }
  
     .card-title{
         text-align: center;
         color: #2f0341;
+        @media (min-width: 320px) and (max-width: 567px){
+        font-size: 0.5rem;
+        }
     }
 
     .card-text{
        text-align: center;
        font-weight: bold;
+       @media (min-width: 320px) and (max-width: 567px){
+       font-size: 0.5rem;
+        }
     }
 
     /*propiedades formulario de contacto*/
@@ -116,6 +180,9 @@
     .contacto{  
         padding: 50px;
         color: #2f0341;
+        @media (min-width: 568px) and (max-width: 767px){
+        padding: 150x;
+        }
         .contacto__formulario{
            text-align: center;
            .contacto__formulario--boton{
@@ -127,8 +194,6 @@
         }
     }
 
-
-
     /*propiedades footer*/
 
     .footer{
@@ -136,8 +201,25 @@
         color: #632e79d0;
         padding-left: 25px;
         padding-top: 5px;
+        .footer__mapa{
+            max-width: 50%;
+            max-height: 30%;
+            
+            @media (min-width: 568px) and (max-width: 767px){
+                max-width: 50%;
+                max-height: 30%;
+            }
+           
+            @media (min-width: 320px) and (max-width: 567px){
+            max-width: 50%;
+            max-height: 82px;
+    }
+        }
         .footer__datoscontacto{
-            font-size: 1em;
+            font-size: 1em;    
+            @media (min-width: 320px) and (max-width: 767px){
+            display:none !important; 
+            }
         }
         .footer__copyright{
             font-size: 1rem;
@@ -146,11 +228,7 @@
         }
     }
   
-
-
-
-
-    
+ 
     .redessociales{
         display: flex;
         font-weight: bold;
@@ -164,124 +242,3 @@
         }
     }
     
-
-    @media (min-width: 568px) and (max-width: 767px){
-
-
-        
-        #header__h1{
-        font-size: 1.5rem;
-        }
-
-
-       .carousel-inner__texto{
-        font-size: 1rem;
-        }
-
-       .carousel-inner__texto{
-            font-size: 1.5rem;
-            color:rgb(43, 2, 82);
-            text-align: center;
-            margin: 5px;
-            padding-bottom:300px;
-        }
-    
-       .carousel-inner__texto2{
-            font-size: 1.5rem;
-            color:rgb(130, 65, 184);
-            text-align: center;
-            margin: 5px;
-            padding-bottom: 600px;
-        }
-    
-        #carousel-inner__encabezado2--especialidades{
-            padding-bottom: 50%;
-            padding-right: 25%; 
-            font-weight: bold;
-            font-size: 2.5rem;
-            color: #2f0341;
-            font-weight: bold;     
-        }
-        
-        .card{
-            margin-top: 15px;
-            margin-bottom: 15px;
-    
-        }
-     
-        .contacto{
-            padding: 150x;
-        }
-
-        .footer__datoscontacto{
-            display:none !important; 
-        }
-
-        .footer__mapa{
-            max-width: 50%;
-            max-height: 30%;
-        }
-
-}
-
-@media (min-width: 320px) and (max-width: 567px){
-
-
-
-    #header__h1{
-    font-size: 1.5rem;
-    }
-
-    .header__nav__logo{
-        width: 50px;
-        height: 50px;
-    }
-
-   .carousel-inner__texto{
-        font-size: 1rem;
-        color:rgb(43, 2, 82);
-        text-align: center;
-        margin: 5px;
-        padding-bottom: 300px;
-    }
-
-   .carousel-inner__texto2{
-        font-size: 1rem;
-        color:rgb(130, 65, 184);
-        text-align: center;
-        margin: 5px;
-        padding-bottom: 600px;
-    }
-
-    #carousel-inner__encabezado2--especialidades{
-        padding-bottom: 75%;
-        padding-right: 25%; 
-        font-size: 1.5rem;
-        color: #2f0341;
-        font-weight: bold;  
-    }
-
-    .card{
-        width: 138px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        overflow-x: hidden;
-    }
-
-    .card-title{
-        font-size: 0.5rem;
-    }
-
-    .card-text{
-        font-size: 0.5rem;
-    }
-    
-    .footer__datoscontacto{
-        display:none !important; 
-    }
-
-    .footer__mapa{
-        max-width: 50%;
-        max-height: 82px;
-    }
-}

@@ -29,6 +29,18 @@ header #header__h1 {
   font-weight: bold;
 }
 
+@media (min-width: 568px) and (max-width: 767px) {
+  header #header__h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 567px) {
+  header #header__h1 {
+    font-size: 1.25rem;
+  }
+}
+
 header .header__nav {
   font-size: 1rem;
   color: #38276e;
@@ -37,6 +49,13 @@ header .header__nav {
 header .header__nav .header__nav__logo {
   width: 75px;
   height: 75px;
+}
+
+@media (min-width: 320px) and (max-width: 567px) {
+  header .header__nav .header__nav__logo {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 /*propiedades customizadas carrousel bootstrap*/
@@ -64,6 +83,26 @@ header .header__nav .header__nav__logo {
   padding-bottom: 250px;
 }
 
+@media (min-width: 568px) and (max-width: 767px) {
+  .carousel-inner .carousel-inner__texto {
+    font-size: 1rem;
+    color: #2b0252;
+    text-align: center;
+    margin: 5px;
+    padding-bottom: 300px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 567px) {
+  .carousel-inner .carousel-inner__texto {
+    font-size: 1rem;
+    color: #2b0252;
+    text-align: center;
+    margin: 5px;
+    padding-bottom: 300px;
+  }
+}
+
 .carousel-inner #carousel-inner__encabezado2 {
   font-size: 3rem;
   color: #a392aaf5;
@@ -75,6 +114,26 @@ header .header__nav .header__nav__logo {
   text-align: center;
   margin: 5px;
   padding-bottom: 300px;
+}
+
+@media (min-width: 568px) and (max-width: 767px) {
+  .carousel-inner .carousel-inner__texto2 {
+    font-size: 1.5rem;
+    color: #8241b8;
+    text-align: center;
+    margin: 5px;
+    padding-bottom: 600px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 567px) {
+  .carousel-inner .carousel-inner__texto2 {
+    font-size: 1rem;
+    color: #8241b8;
+    text-align: center;
+    margin: 5px;
+    padding-bottom: 600px;
+  }
 }
 
 .carousel-inner .carousel-inner__imagenes--especialidades {
@@ -90,10 +149,49 @@ header .header__nav .header__nav__logo {
   font-weight: bold;
 }
 
+@media (min-width: 568px) and (max-width: 767px) {
+  .carousel-inner #carousel-inner__encabezado2--especialidades {
+    padding-bottom: 50%;
+    padding-right: 25%;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #2f0341;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 567px) {
+  .carousel-inner #carousel-inner__encabezado2--especialidades {
+    padding-bottom: 75%;
+    padding-right: 25%;
+    font-size: 1.5rem;
+    color: #2f0341;
+    font-weight: bold;
+  }
+}
+
 /*propiedades de las cards de staff*/
 .card {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+@media (min-width: 568px) and (max-width: 767px) {
+  .card {
+    width: 138px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 567px) {
+  .card {
+    width: 138px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow-x: hidden;
+  }
 }
 
 .card-title {
@@ -101,15 +199,33 @@ header .header__nav .header__nav__logo {
   color: #2f0341;
 }
 
+@media (min-width: 320px) and (max-width: 567px) {
+  .card-title {
+    font-size: 0.5rem;
+  }
+}
+
 .card-text {
   text-align: center;
   font-weight: bold;
+}
+
+@media (min-width: 320px) and (max-width: 567px) {
+  .card-text {
+    font-size: 0.5rem;
+  }
 }
 
 /*propiedades formulario de contacto*/
 .contacto {
   padding: 50px;
   color: #2f0341;
+}
+
+@media (min-width: 568px) and (max-width: 767px) {
+  .contacto {
+    padding: 150x;
+  }
 }
 
 .contacto .contacto__formulario {
@@ -132,8 +248,33 @@ header .header__nav .header__nav__logo {
   padding-top: 5px;
 }
 
+.footer .footer__mapa {
+  max-width: 50%;
+  max-height: 30%;
+}
+
+@media (min-width: 568px) and (max-width: 767px) {
+  .footer .footer__mapa {
+    max-width: 50%;
+    max-height: 30%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 567px) {
+  .footer .footer__mapa {
+    max-width: 50%;
+    max-height: 82px;
+  }
+}
+
 .footer .footer__datoscontacto {
   font-size: 1em;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer .footer__datoscontacto {
+    display: none !important;
+  }
 }
 
 .footer .footer__copyright {
@@ -160,100 +301,5 @@ header .header__nav .header__nav__logo {
 .redessociales .redessociales__imagenes {
   height: 30px;
   width: 30px;
-}
-
-@media (min-width: 568px) and (max-width: 767px) {
-  #header__h1 {
-    font-size: 1.5rem;
-  }
-  .carousel-inner__texto {
-    font-size: 1rem;
-  }
-  .carousel-inner__texto {
-    font-size: 1.5rem;
-    color: #2b0252;
-    text-align: center;
-    margin: 5px;
-    padding-bottom: 300px;
-  }
-  .carousel-inner__texto2 {
-    font-size: 1.5rem;
-    color: #8241b8;
-    text-align: center;
-    margin: 5px;
-    padding-bottom: 600px;
-  }
-  #carousel-inner__encabezado2--especialidades {
-    padding-bottom: 50%;
-    padding-right: 25%;
-    font-weight: bold;
-    font-size: 2.5rem;
-    color: #2f0341;
-    font-weight: bold;
-  }
-  .card {
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  .contacto {
-    padding: 150x;
-  }
-  .footer__datoscontacto {
-    display: none !important;
-  }
-  .footer__mapa {
-    max-width: 50%;
-    max-height: 30%;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 567px) {
-  #header__h1 {
-    font-size: 1.5rem;
-  }
-  .header__nav__logo {
-    width: 50px;
-    height: 50px;
-  }
-  .carousel-inner__texto {
-    font-size: 1rem;
-    color: #2b0252;
-    text-align: center;
-    margin: 5px;
-    padding-bottom: 300px;
-  }
-  .carousel-inner__texto2 {
-    font-size: 1rem;
-    color: #8241b8;
-    text-align: center;
-    margin: 5px;
-    padding-bottom: 600px;
-  }
-  #carousel-inner__encabezado2--especialidades {
-    padding-bottom: 75%;
-    padding-right: 25%;
-    font-size: 1.5rem;
-    color: #2f0341;
-    font-weight: bold;
-  }
-  .card {
-    width: 138px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    overflow-x: hidden;
-  }
-  .card-title {
-    font-size: 0.5rem;
-  }
-  .card-text {
-    font-size: 0.5rem;
-  }
-  .footer__datoscontacto {
-    display: none !important;
-  }
-  .footer__mapa {
-    max-width: 50%;
-    max-height: 82px;
-  }
 }
 /*# sourceMappingURL=estilos.css.map */
