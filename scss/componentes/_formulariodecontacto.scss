@@ -1,0 +1,21 @@
+    /*propiedades formulario de contacto*/
+
+    .contacto {
+        padding: 50px;
+        color: map-get($PaletaColoreCarousel, Texto);
+
+        @media (min-width: 568px) and (max-width: 767px) {
+            padding: 150x;
+        }
+
+        .contacto__formulario {
+            text-align: center;
+
+            .contacto__formulario--boton {
+                color: map-get($PaletaColoreCarousel, TextoSup);
+                border-radius: 25%;
+                background-color: #511569;
+                overflow-x: hidden;
+            }
+        }
+    }

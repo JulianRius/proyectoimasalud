@@ -1,41 +1,86 @@
+@charset "UTF-8";
+/*color de fondo del body*/
+/*color de fondo del header y footer*/
+/*color fuente header*/
+/*paleta de colores carouseles*/
+/*mixin tamaño del logo IMA*/
+/*propiedades box model carouseles*/
 * {
   list-style-type: none;
   text-decoration: none;
   box-sizing: border-box;
   overflow: auto;
-  background-repeat: no-repeat;
-  font-family: 'Ubuntu', sans-serif;
   border: none;
   margin: 0%;
-  padding: 0%; }
+  padding: 0%;
+  font-family: 'Ubuntu', sans-serif; }
 
+/*propiedades de body*/
 .body {
   background-image: linear-gradient(to bottom, #e6dae8, #ded2e1, #d6cada, #cec2d3, #c6bacc, #c5bacd, #c5bacd, #c4bace, #cac2d6, #d0c9de, #d7d1e6, #ddd9ee); }
 
-/*propiedades header y componentes*/
+/*propiedades del header*/
 header {
   background-image: linear-gradient(to right bottom, #bbb3be, #bbb2c0, #bbb0c3, #baafc5, #b9aec8, #b7abca, #b4a7cd, #b1a4cf, #ac9ed1, #a897d3, #a291d4, #9d8bd6);
   font-style: italic; }
-  header #header__h1 {
+  header #header__h1, header .header__nav {
     color: #632e79d0;
     font-style: italic;
     font-weight: bold; }
     @media (min-width: 568px) and (max-width: 767px) {
-      header #header__h1 {
+      header #header__h1, header .header__nav {
         font-size: 1.5rem; } }
     @media (min-width: 320px) and (max-width: 567px) {
-      header #header__h1 {
+      header #header__h1, header .header__nav {
         font-size: 1.25rem; } }
   header .header__nav {
-    font-size: 1rem;
-    color: #38276e; }
+    font-size: 1rem; }
+    @media (min-width: 568px) and (max-width: 767px) {
+      header .header__nav {
+        font-size: 3rem -2.25; } }
+    @media (min-width: 320px) and (max-width: 567px) {
+      header .header__nav {
+        font-size: 0.5rem; } }
     header .header__nav .header__nav__logo {
-      width: 75px;
-      height: 75px; }
+      height: 75px;
+      width: 75px; }
       @media (min-width: 320px) and (max-width: 567px) {
         header .header__nav .header__nav__logo {
-          width: 50px;
-          height: 50px; } }
+          height: 50px;
+          width: 50px; } }
+
+/*propiedades footer*/
+.footer {
+  background-image: linear-gradient(to right bottom, #bbb3be, #bbb2c0, #bbb0c3, #baafc5, #b9aec8, #b7abca, #b4a7cd, #b1a4cf, #ac9ed1, #a897d3, #a291d4, #9d8bd6);
+  color: #2b0252;
+  padding-left: 25px;
+  padding-top: 5px; }
+  .footer .footer__mapa {
+    max-width: 50%;
+    max-height: 30%; }
+    @media (min-width: 320px) and (max-width: 567px) {
+      .footer .footer__mapa {
+        max-height: 82px; } }
+  .footer .footer__datoscontacto {
+    font-size: 1em; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .footer .footer__datoscontacto {
+        display: none !important; } }
+  .footer .footer__copyright {
+    font-size: 1rem;
+    color: #632e79d0;
+    border-top: black; }
+
+.redessociales {
+  display: flex;
+  font-weight: bold;
+  color: #06000c;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 10px; }
+  .redessociales .redessociales__imagenes {
+    height: 30px;
+    width: 30px; }
 
 /*propiedades customizadas carrousel bootstrap*/
 .carousel-inner {
@@ -56,14 +101,12 @@ header {
     @media (min-width: 568px) and (max-width: 767px) {
       .carousel-inner .carousel-inner__texto {
         font-size: 1rem;
-        color: #2b0252;
         text-align: center;
         margin: 5px;
         padding-bottom: 300px; } }
     @media (min-width: 320px) and (max-width: 567px) {
       .carousel-inner .carousel-inner__texto {
         font-size: 1rem;
-        color: #2b0252;
         text-align: center;
         margin: 5px;
         padding-bottom: 300px; } }
@@ -93,108 +136,51 @@ header {
   .carousel-inner .carousel-inner__imagenes--especialidades {
     height: 800px; }
   .carousel-inner #carousel-inner__encabezado2--especialidades {
-    padding-bottom: 30%;
     padding-right: 25%;
+    padding-bottom: 30%;
     font-weight: bold;
     font-size: 3rem;
-    color: #2f0341;
-    font-weight: bold; }
+    color: #2f0341; }
     @media (min-width: 568px) and (max-width: 767px) {
       .carousel-inner #carousel-inner__encabezado2--especialidades {
-        padding-bottom: 50%;
         padding-right: 25%;
+        padding-bottom: 50%;
         font-weight: bold;
-        font-size: 2.5rem;
-        color: #2f0341;
-        font-weight: bold; } }
+        font-size: 2.5rem; } }
     @media (min-width: 320px) and (max-width: 567px) {
       .carousel-inner #carousel-inner__encabezado2--especialidades {
-        padding-bottom: 75%;
         padding-right: 25%;
-        font-size: 1.5rem;
-        color: #2f0341;
-        font-weight: bold; } }
+        padding-bottom: 75%;
+        font-weight: bold;
+        font-size: 1.5rem; } }
 
 /*propiedades de las cards de staff*/
 .card {
   margin-top: 10px;
   margin-bottom: 10px; }
-  @media (min-width: 568px) and (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 767px) {
     .card {
       width: 138px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      overflow-x: hidden; } }
-  @media (min-width: 320px) and (max-width: 567px) {
-    .card {
-      width: 138px;
-      margin-top: 10px;
-      margin-bottom: 10px;
       overflow-x: hidden; } }
 
-.card-title {
+.card-title, .card-text {
   text-align: center;
   color: #2f0341; }
-  @media (min-width: 320px) and (max-width: 567px) {
-    .card-title {
-      font-size: 0.5rem; } }
-
-.card-text {
-  text-align: center;
-  font-weight: bold; }
-  @media (min-width: 320px) and (max-width: 567px) {
-    .card-text {
+  @media (min-width: 320px) and (max-width: 767px) {
+    .card-title, .card-text {
       font-size: 0.5rem; } }
 
 /*propiedades formulario de contacto*/
 .contacto {
   padding: 50px;
-  color: #2f0341; }
+  color: #2b0252; }
   @media (min-width: 568px) and (max-width: 767px) {
     .contacto {
       padding: 150x; } }
   .contacto .contacto__formulario {
     text-align: center; }
     .contacto .contacto__formulario .contacto__formulario--boton {
-      color: #ffffff;
+      color: #efecf1;
       border-radius: 25%;
       background-color: #511569;
       overflow-x: hidden; }
-
-/*propiedades footer*/
-.footer {
-  background-image: linear-gradient(to right bottom, #bbb3be, #bbb2c0, #bbb0c3, #baafc5, #b9aec8, #b7abca, #b4a7cd, #b1a4cf, #ac9ed1, #a897d3, #a291d4, #9d8bd6);
-  color: #632e79d0;
-  padding-left: 25px;
-  padding-top: 5px; }
-  .footer .footer__mapa {
-    max-width: 50%;
-    max-height: 30%; }
-    @media (min-width: 568px) and (max-width: 767px) {
-      .footer .footer__mapa {
-        max-width: 50%;
-        max-height: 30%; } }
-    @media (min-width: 320px) and (max-width: 567px) {
-      .footer .footer__mapa {
-        max-width: 50%;
-        max-height: 82px; } }
-  .footer .footer__datoscontacto {
-    font-size: 1em; }
-    @media (min-width: 320px) and (max-width: 767px) {
-      .footer .footer__datoscontacto {
-        display: none !important; } }
-  .footer .footer__copyright {
-    font-size: 1rem;
-    color: #470864;
-    border-top: solid #2f0341; }
-
-.redessociales {
-  display: flex;
-  font-weight: bold;
-  color: #06000c;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 10px; }
-  .redessociales .redessociales__imagenes {
-    height: 30px;
-    width: 30px; }

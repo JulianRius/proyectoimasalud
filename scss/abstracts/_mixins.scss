@@ -1,0 +1,21 @@
+/*mixin tamaño del logo IMA*/
+@mixin tamanioLogo ( $width, $height){
+    height: $height;
+    width: $width;
+};
+
+/*propiedades box model carouseles*/
+
+@mixin carouselIndexBMod ($AlineaTexto, $margin, $padding-bottom){
+    text-align: $AlineaTexto;
+    margin: $margin;
+    padding-bottom: $padding-bottom;
+};
+
+@mixin carouselEspecialidadesBMod ($padding-right, $padding-bottom, $Negrita){
+    padding-right: $padding-right;
+    padding-bottom: $padding-bottom;
+    font-weight: $Negrita
+};
+
+

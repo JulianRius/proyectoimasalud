@@ -1,0 +1,24 @@
+/*propiedades de las cards de staff*/
+
+.card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @media (min-width: 320px) and (max-width: 767px) {
+        width: 138px;
+        overflow-x: hidden;
+    }
+}
+
+.card-title {
+    text-align: center;
+    color: #2f0341;
+
+    @media (min-width: 320px) and (max-width: 767px) {
+        font-size: 0.5rem;
+    }
+}
+
+.card-text {
+    @extend .card-title
+}

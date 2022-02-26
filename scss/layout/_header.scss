@@ -1,0 +1,41 @@
+/*propiedades del header*/
+
+header {
+    background-image: $FondoBackgroundHeader;
+    font-style: $Cursiva;
+
+    #header__h1 {
+        color: $ColorFuenteHeader;
+        font-style: $Cursiva;
+        font-weight: $Negrita;
+
+        @media (min-width: 568px) and (max-width: 767px) {
+            font-size: map-get($Fontsizes, S);
+        }
+
+        @media (min-width: 320px) and (max-width: 567px) {
+            font-size: map-get($Fontsizes, XS);
+        }
+    }
+
+    .header__nav {
+        font-size: map-get($Fontsizes, STD);
+        @extend #header__h1;
+
+        @media (min-width: 568px) and (max-width: 767px) {
+            font-size: map-get($Fontsizes, XXS);
+        }
+
+        @media (min-width: 320px) and (max-width: 567px) {
+            font-size: map-get($Fontsizes, US);
+        }
+
+        .header__nav__logo {
+            @include tamanioLogo(75px, 75px);
+
+            @media (min-width: 320px) and (max-width: 567px) {
+                @include tamanioLogo(50px, 50px);
+            }
+        }
+    }
+}

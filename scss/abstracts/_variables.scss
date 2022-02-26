@@ -1,0 +1,18 @@
+/*color de fondo del body*/
+$FondoBackgroundBody:linear-gradient(to bottom, #e6dae8, #ded2e1, #d6cada, #cec2d3, #c6bacc, #c5bacd, #c5bacd, #c4bace, #cac2d6, #d0c9de, #d7d1e6, #ddd9ee);
+
+/*color de fondo del header y footer*/
+$FondoBackgroundHeader: linear-gradient(to right bottom, #bbb3be, #bbb2c0, #bbb0c3, #baafc5, #b9aec8, #b7abca, #b4a7cd, #b1a4cf, #ac9ed1, #a897d3, #a291d4, #9d8bd6);
+
+/*color fuente header*/
+$ColorFuenteHeader:#632e79d0;
+
+
+/*paleta de colores carouseles*/
+$PaletaColoreCarousel:(Encabezado:#502f5ef5,
+    Texto:rgb(43, 2, 82),
+    EncabezadoAlt:#a392aaf5,
+    TextoSup:rgb(239, 236, 241),
+    TextoAlt:rgb(130, 65, 184),
+    Especialidades:#2f0341,
+);
