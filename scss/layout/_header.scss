@@ -1,33 +1,55 @@
 /*propiedades del header*/
 
+
 header {
     background-image: $FondoBackgroundHeader;
     font-style: $Cursiva;
+    box-shadow: -1px 7px 7px 1px rgba(146, 137, 194, 0.75);
+    -webkit-box-shadow: -1px 7px 7px 1px rgba(146, 137, 194, 0.75);
+    -moz-box-shadow: -1px 7px 7px 1px rgba(146, 137, 194, 0.75);
+
 
     #header__h1 {
         color: $ColorFuenteHeader;
         font-style: $Cursiva;
         font-weight: $Negrita;
 
-        @media (min-width: 568px) and (max-width: 767px) {
+        @media (min-width: 320px) {
+            font-size: map-get($Fontsizes, XS);
+        }
+
+        @media (min-width: 480px) {
             font-size: map-get($Fontsizes, S);
         }
 
-        @media (min-width: 320px) and (max-width: 567px) {
-            font-size: map-get($Fontsizes, XS);
+        @media (min-width: 768px) {
+            font-size: map-get($Fontsizes, M);
         }
+
+        @media (min-width: 960px) {
+            font-size: map-get($Fontsizes, L);
+        }
+
+        @media (min-width: 1024px) {
+            font-size: map-get($Fontsizes, XL);
+        }
+
     }
 
     .header__nav {
-        font-size: map-get($Fontsizes, STD);
         @extend #header__h1;
+        font-style: $Cursiva;
 
-        @media (min-width: 568px) and (max-width: 767px) {
+        @media (min-width: 320px) {
+            font-size: map-get($Fontsizes, US);
+        }
+
+        @media (min-width: 480px) {
             font-size: map-get($Fontsizes, XXS);
         }
 
-        @media (min-width: 320px) and (max-width: 567px) {
-            font-size: map-get($Fontsizes, US);
+        @media (min-width: 1024px) {
+            font-size: map-get($Fontsizes, XS);
         }
 
         .header__nav__logo {

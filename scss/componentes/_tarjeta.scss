@@ -3,22 +3,29 @@
 .card {
     margin-top: 10px;
     margin-bottom: 10px;
-
-    @media (min-width: 320px) and (max-width: 767px) {
-        width: 138px;
-        overflow-x: hidden;
+    box-shadow: 32px 24px 34px -10px rgba(101, 89, 110, 0.57);
+    -webkit-box-shadow: 32px 24px 34px -10px rgba(101, 89, 110, 0.57);
+    -moz-box-shadow: 32px 24px 34px -10px rgba(101, 89, 110, 0.57);
+    
+    .card-title {
+        text-align: center;
+        color: #2f0341;
+    
+        @media (min-width: 320px) {
+            font-size: map-get($Fontsizes, US);
+        }
+    
+        @media (min-width: 480px) {
+            font-size: map-get($Fontsizes, XXS);
+        }
+    
+        @media (min-width: 960px) {
+            font-size: map-get($Fontsizes, STD);
+        }
+    }
+    
+    .card-text {
+        @extend .card-title
     }
 }
 
-.card-title {
-    text-align: center;
-    color: #2f0341;
-
-    @media (min-width: 320px) and (max-width: 767px) {
-        font-size: 0.5rem;
-    }
-}
-
-.card-text {
-    @extend .card-title
-}

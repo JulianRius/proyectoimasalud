@@ -3,19 +3,102 @@
     .contacto {
         padding: 50px;
         color: map-get($PaletaColoreCarousel, Texto);
+        font-family: 'Cabin Condensed', sans-serif;
+        ;
 
         @media (min-width: 568px) and (max-width: 767px) {
             padding: 150x;
         }
 
         .contacto__formulario {
+            margin: auto;
+            padding: 20px;
             text-align: center;
+            background: #ebe6ec;
+            border-radius: 6px;
+            max-width: 1100px;
+            box-shadow: 10px 19px 19px -8px rgba(176, 128, 219, 0.54);
+            -webkit-box-shadow: 10px 19px 19px -8px rgba(176, 128, 219, 0.54);
+            -moz-box-shadow: 10px 19px 19px -8px rgba(176, 128, 219, 0.54);
+
+            #contacto__formulario--texto {
+                max-width: 100%;
+
+                @media (min-width: 320px) {
+                    padding-top: 25px;
+                    font-size: map-get($Fontsizes, XXS);
+                }
+
+                @media (min-width: 550px) {
+                    font-size: map-get($Fontsizes, XS);
+                }
+
+                @media (min-width: 650px) {
+                    font-size: map-get($Fontsizes, XXS);
+                }
+
+
+                @media (min-width: 768px) {
+                    font-size: map-get($Fontsizes, S);
+                }
+
+                @media (min-width: 960px) {
+                    font-size: map-get($Fontsizes, S);
+                }
+
+                @media (min-width: 1024px) {
+                    font-size: map-get($Fontsizes, M);
+                }
+            }
+
+
+            input,
+            label,
+            textarea {
+                width: 100%;
+                padding: 8px;
+
+                @media (min-width: 320px) {
+                    font-size: map-get($Fontsizes, XXS);
+                }
+
+                @media (min-width: 480px) {
+                    font-size: map-get($Fontsizes, STD);
+                }
+
+                @media (min-width: 768px) {
+                    font-size: map-get($Fontsizes, XS);
+                }
+
+                @media (min-width: 960px) {
+                    font-size: map-get($Fontsizes, S);
+                }
+
+                @media (min-width: 1024px) {
+                    font-size: map-get($Fontsizes, S);
+                }
+            }
+
+            textarea {
+                min-height: 130px;
+                max-height: 190px;
+                max-width: 100%;
+            }
 
             .contacto__formulario--boton {
-                color: map-get($PaletaColoreCarousel, TextoSup);
-                border-radius: 25%;
+                color: map-get($PaletaColoreCarousel, Boton);
                 background-color: #511569;
-                overflow-x: hidden;
+                width: 100%;
+                border-radius: 2px;
+                border: solid 2px gray;
+                pointer-events: all;
+            }
+
+            .contacto__formulario--img {
+                width: 100%;
+                border-radius: 5px;
+                box-shadow: 10px 19px 19px -8px rgba(176, 128, 219, 0.54);
+
             }
         }
     }

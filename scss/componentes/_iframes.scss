@@ -1,0 +1,13 @@
+/*propiedades de iframes tipss*/
+
+.embed-responsive-item {
+    @media (min-width: 768px) {
+        height: 300px;
+        margin-bottom: 5px;
+    }
+
+    @media (min-width: 1024px) {
+        height: 380px;
+        margin-bottom: 5px;
+    }
+}

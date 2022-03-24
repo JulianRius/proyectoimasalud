@@ -1,78 +1,326 @@
-    /*propiedades customizadas carrousel bootstrap*/
+/*propiedades customizadas carrousel bootstrap*/
+
+#carouselExampleDark {
+    width: 100%;
 
     .carousel-inner {
-        height: 800px;
         width: 100%;
-        object-fit: cover;
+        margin: 5px;
 
         .carousel-inner__imagenes {
-            height: 900px;
-        }
+            width: 100%;
+            border-radius: 5px;
 
-        #carousel-inner__encabezado {
-            font-size: map-get($Fontsizes, XXL);
-            color: map-get($PaletaColoreCarousel, Encabezado);
-        }
-
-        .carousel-inner__texto {
-            font-size: map-get($Fontsizes, M);
-            color: map-get($PaletaColoreCarousel, Texto);
-            @include carouselIndexBMod(center, 5px, 250px);
-
-            @media (min-width: 568px) and (max-width: 767px) {
-                font-size: map-get($Fontsizes, STD);
-                @include carouselIndexBMod(center, 5px, 300px);
+            @media (min-width: 320px) {
+                height: 400px;
             }
 
-            @media (min-width: 320px) and (max-width: 567px) {
-                font-size: map-get($Fontsizes, STD);
-                @include carouselIndexBMod(center, 5px, 300px);
-            }
-        }
-
-        #carousel-inner__encabezado2 {
-            font-size: map-get($Fontsizes, XXL);
-            color: map-get($PaletaColoreCarousel, EncabezadoAlt);
-        }
-
-        .carousel-inner__texto2 {
-            font-size: map-get($Fontsizes, L);
-            color: map-get($PaletaColoreCarousel, TextoSup);
-            @include carouselIndexBMod(center, 5px, 300px);
-
-            @media (min-width: 568px) and (max-width: 767px) {
-                font-size: map-get($Fontsizes, S);
-                color: map-get($PaletaColoreCarousel, TextoAlt);
-                @include carouselIndexBMod(center, 5px, 600px);
+            @media (min-width: 480px) {
+                height: 500px;
             }
 
-            @media (min-width: 320px) and (max-width: 567px) {
-                font-size: map-get($Fontsizes, STD);
-                color: map-get($PaletaColoreCarousel, TextoAlt);
-                @include carouselIndexBMod(center, 5px, 600px);
+            @media (min-width: 768px) {
+                height: 600px;
+            }
+
+            @media (min-width: 960px) {
+                height: 650px;
+            }
+
+            @media (min-width: 1024px) {
+                height: 700px;
+            }
+
+            @media (min-width: 1366px) {
+                height: 750px;
+            }
+
+            @media (min-width: 1920px) {
+                height: 800px;
             }
         }
 
-        .carousel-inner__imagenes--especialidades {
-            height: 800px;
-        }
+        .carousel-caption {
+            width: 70%;
+            overflow: hidden;
 
-        #carousel-inner__encabezado2--especialidades {
-            @include carouselEspecialidadesBMod(25%, 30%, $Negrita);
-            font-size: map-get($Fontsizes, XXL);
-            color: map-get($PaletaColoreCarousel, Especialidades);
+            @media (min-width: 320px) {
+                height: 400px;
+            }
 
+            @media (min-width: 480px) {
+                height: 500px;
+            }
 
-            @media (min-width: 568px) and (max-width: 767px) {
-                @include carouselEspecialidadesBMod(25%, 50%, $Negrita);
-                font-size: map-get($Fontsizes, L);
+            @media (min-width: 768px) {
+                height: 600px;
+            }
 
+            @media (min-width: 960px) {
+                height: 650px;
+            }
+
+            @media (min-width: 1024px) {
+                height: 700px;
+            }
+
+            @media (min-width: 1366px) {
+                height: 750px;
+            }
+
+            @media (min-width: 1920px) {
+                height: 800px;
+            }
+
+            #carousel-inner__encabezado {
+                color: map-get($PaletaColoreCarousel, Encabezado);
+
+                @media (min-width: 320px) {
+                    font-size: map-get($Fontsizes, S);
+                }
+
+                @media (min-width: 480px) {
+                    font-size: map-get($Fontsizes, M);
+                }
+
+                @media (min-width: 768px) {
+                    font-size: map-get($Fontsizes, L);
+                }
+
+                @media (min-width: 960px) {
+                    font-size: map-get($Fontsizes, L);
+                }
+
+                @media (min-width: 1024px) {
+                    font-size: map-get($Fontsizes, XL);
+                }
+
+                @media (min-width: 1366px) {
+                    font-size: map-get($Fontsizes, XXL);
+                }
+
+                @media (min-width: 1920px) {
+                    font-size: map-get($Fontsizes, XXL);
+                }
 
             }
 
-            @media (min-width: 320px) and (max-width: 567px) {
-                @include carouselEspecialidadesBMod(25%, 75%, $Negrita);
-                font-size: map-get($Fontsizes, S);
+            .carousel-inner__texto {
+                color: map-get($PaletaColoreCarousel, Textocont);
+                overflow: hidden;
+
+                @media (min-width: 320px) {
+                    font-size: map-get($Fontsizes, XXS);
+                    @include carouselIndexBMod(center, 40px, bolder);
+                }
+
+                @media (min-width: 480px) {
+                    font-size: map-get($Fontsizes, STD);
+                    @include carouselIndexBMod(center, 40px, bolder);
+                }
+
+                @media (min-width: 768px) {
+                    font-size: map-get($Fontsizes, S);
+                    @include carouselIndexBMod(center, 45px, bolder);
+                }
+
+                @media (min-width: 960px) {
+                    font-size: map-get($Fontsizes, M);
+                    @include carouselIndexBMod(center, 45px, bolder);
+                }
+
+                @media (min-width: 1024px) {
+                    font-size: map-get($Fontsizes, L);
+                    @include carouselIndexBMod(center, 45px, bolder);
+                }
+
+                @media (min-width: 1366px) {
+                    font-size: map-get($Fontsizes, XL);
+                    @include carouselIndexBMod(center, 50px, bolder);
+                }
             }
         }
     }
+
+}
+
+.carousel-inner {
+    width: 100%;
+    margin: 5px;
+
+    .carousel-inner__imagenes--especialidades {
+        width: 100%;
+        border-radius: 5px;
+
+        @media (min-width: 320px) {
+            height: 400px;
+        }
+
+        @media (min-width: 480px) {
+            height: 500px;
+        }
+
+        @media (min-width: 768px) {
+            height: 600px;
+        }
+
+        @media (min-width: 960px) {
+            height: 650px;
+        }
+
+        @media (min-width: 1024px) {
+            height: 700px;
+        }
+
+        @media (min-width: 1366px) {
+            height: 750px;
+        }
+
+        @media (min-width: 1920px) {
+            height: 800px;
+        }
+
+    }
+
+}
+
+.carousel-caption {
+    width: 70%;
+    overflow: hidden;
+
+    @media (min-width: 320px) {
+        height: 400px;
+    }
+
+    @media (min-width: 480px) {
+        height: 500px;
+    }
+
+    @media (min-width: 768px) {
+        height: 600px;
+    }
+
+    @media (min-width: 960px) {
+        height: 650px;
+    }
+
+    @media (min-width: 1024px) {
+        height: 700px;
+    }
+
+    @media (min-width: 1366px) {
+        height: 750px;
+    }
+
+    @media (min-width: 1920px) {
+        height: 800px;
+    }
+
+    #carousel-inner__encabezado2 {
+        color: map-get($PaletaColoreCarousel, EncabezadoAlt);
+
+        @media (min-width: 320px) {
+            font-size: map-get($Fontsizes, S);
+        }
+
+        @media (min-width: 480px) {
+            font-size: map-get($Fontsizes, M);
+        }
+
+        @media (min-width: 768px) {
+            font-size: map-get($Fontsizes, L);
+        }
+
+        @media (min-width: 960px) {
+            font-size: map-get($Fontsizes, L);
+        }
+
+        @media (min-width: 1024px) {
+            font-size: map-get($Fontsizes, XL);
+        }
+
+        @media (min-width: 1366px) {
+            font-size: map-get($Fontsizes, XXL);
+        }
+
+        @media (min-width: 1920px) {
+            font-size: map-get($Fontsizes, XXL);
+        }
+    }
+
+    .carousel-inner__texto2 {
+        color: map-get($PaletaColoreCarousel, TextoSup);
+
+        @media (min-width: 320px) {
+            font-size: map-get($Fontsizes, XXS);
+            @include carouselIndexBMod(center, 40px, bolder);
+        }
+
+        @media (min-width: 480px) {
+            font-size: map-get($Fontsizes, STD);
+            @include carouselIndexBMod(center, 40px, bolder);
+        }
+
+        @media (min-width: 768px) {
+            font-size: map-get($Fontsizes, S);
+            @include carouselIndexBMod(center, 45px, bolder);
+        }
+
+        @media (min-width: 960px) {
+            font-size: map-get($Fontsizes, M);
+            @include carouselIndexBMod(center, 45px, bolder);
+        }
+
+        @media (min-width: 1024px) {
+            font-size: map-get($Fontsizes, L);
+            @include carouselIndexBMod(center, 45px, bolder);
+        }
+
+        @media (min-width: 1366px) {
+            font-size: map-get($Fontsizes, XL);
+            @include carouselIndexBMod(center, 50px, bolder);
+        }
+
+    }
+
+
+    #carousel-inner__encabezado2--especialidades {
+        color: map-get($PaletaColoreCarousel, Especialidades);
+
+        @media (min-width: 320px) {
+            @include carouselEspecialidadesBMod(30%, 30%, $Negrita);
+            font-size: map-get($Fontsizes, XS);
+        }
+
+        @media (min-width: 480px) {
+            @include carouselEspecialidadesBMod(30%, 30%, $Negrita);
+            font-size: map-get($Fontsizes, S);
+        }
+
+        @media (min-width: 768px) {
+            @include carouselEspecialidadesBMod(30%, 25%, $Negrita);
+            font-size: map-get($Fontsizes, L);
+        }
+
+        @media (min-width: 960px) {
+            @include carouselEspecialidadesBMod(30%, 23%, $Negrita);
+            font-size: map-get($Fontsizes, XL);
+        }
+
+        @media (min-width: 1024px) {
+            @include carouselEspecialidadesBMod(30%, 20%, $Negrita);
+            font-size: map-get($Fontsizes, L);
+        }
+
+        @media (min-width: 1366px) {
+            @include carouselEspecialidadesBMod(30%, 18%, $Negrita);
+            font-size: map-get($Fontsizes, L);
+        }
+
+        @media (min-width: 1920px) {
+            @include carouselEspecialidadesBMod(30%, 15%, $Negrita);
+            font-size: map-get($Fontsizes, L);
+        }
+    }
+
+}
