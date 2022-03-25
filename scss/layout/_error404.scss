@@ -1,0 +1,115 @@
+/*PROPIEDADES DE LA PÁGIN DE ERROR 404*/
+.cuerpoerror404 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e6dae8), color-stop(#ded2e1), color-stop(#d6cada), color-stop(#cec2d3), color-stop(#c6bacc), color-stop(#c5bacd), color-stop(#c5bacd), color-stop(#c4bace), color-stop(#cac2d6), color-stop(#d0c9de), color-stop(#d7d1e6), to(#ddd9ee));
+    background-image: linear-gradient(to bottom, #e6dae8, #ded2e1, #d6cada, #cec2d3, #c6bacc, #c5bacd, #c5bacd, #c4bace, #cac2d6, #d0c9de, #d7d1e6, #ddd9ee);
+    margin: 0;
+    left: 0;
+    padding-top: 15px;
+    height: 110vh;
+  }
+  
+  .cuerpoerror404 .cuerpoerror404__container {
+    height: 100vh;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow-x: hidden;
+  }
+  
+  .cuerpoerror404 .cuerpoerror404__container .cuerpoerror404__container--encabezado {
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    color: #502f5ef5;
+    font-size: 2.75rem;
+  }
+  
+  .cuerpoerror404 .cuerpoerror404__container .cuerpoerror404__container--imagen {
+    width: 50%;
+    box-shadow: -3px -6px 85px -14px rgba(124, 109, 153, 0.65);
+    -webkit-box-shadow: -3px -6px 85px -14px rgba(124, 109, 153, 0.65);
+    -moz-box-shadow: -3px -6px 85px -14px rgba(124, 109, 153, 0.65);
+    border-radius: 6px;
+  }
+  
+  @media (min-width: 320px) {
+    .cuerpoerror404 .cuerpoerror404__container .cuerpoerror404__container--imagen {
+      height: 400px;
+    }
+  }
+  
+  @media (min-width: 480px) {
+    .cuerpoerror404 .cuerpoerror404__container .cuerpoerror404__container--imagen {
+      height: 500px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .cuerpoerror404 .cuerpoerror404__container .cuerpoerror404__container--imagen {
+      height: 550px;
+    }
+  }
+  
+  @media (min-width: 960px) {
+    .cuerpoerror404 .cuerpoerror404__container .cuerpoerror404__container--imagen {
+      height: 570px;
+    }
+  }
+  
+  .cuerpoerror404 .cuerpoerror404__container #cuerpoerror404__container--texto {
+    overflow: hidden;
+    margin: 10px;
+    color: #502f5ef5;
+  }
+  
+  @media (min-width: 320px) {
+    .cuerpoerror404 .cuerpoerror404__container #cuerpoerror404__container--texto {
+      font-size: 0.75rem;
+    }
+  }
+  
+  @media (min-width: 480px) {
+    .cuerpoerror404 .cuerpoerror404__container #cuerpoerror404__container--texto {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .cuerpoerror404 .cuerpoerror404__container #cuerpoerror404__container--texto {
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media (min-width: 960px) {
+    .cuerpoerror404 .cuerpoerror404__container #cuerpoerror404__container--texto {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .cuerpoerror404 .cuerpoerror404__container #cuerpoerror404__container--texto {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .cuerpoerror404 .cuerpoerror404__container .cuerpoerror404__container--boton {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    color: #f3f0f7;
+    background-color: #511569;
+    border-radius: 1px;
+    border: solid 1px gray;
+    pointer-events: all;
+  }
