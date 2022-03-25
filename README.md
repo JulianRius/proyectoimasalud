@@ -40,7 +40,7 @@ Adicionalmente, se creó una página de *error 404* [GitHub Pages](https://julia
 
 # DIAGRAMA DE ARCHIVOS
 
-##proyectoimasalud
+## proyectoimasalud
 
 Carpeta raíz.
 
@@ -52,7 +52,6 @@ Carpeta raíz.
 - staff.html
 - tipss.html
 - contacto.html
-- 404.html
 
 - ### assets
 
@@ -68,7 +67,7 @@ Contiene todos los archivos Javascript de **BOOTSTRAP V.5.0**
 
 - ### scss
 
-Contiene los archivos de estilos personalizados y los archivos principales de estilos *estilos.scss*, *estilos.scss* y *estilos.css.map* .
+Contiene los archivos de estilos personalizados y los archivos principales de estilos *estilos.scss*, *estilos.css* y *estilos.css.map* .
 
 - #### abstracts
 
@@ -84,6 +83,5 @@ Contiene los archivos  **_carousel.scss** correspondiente a los parámetros apli
 .
 - #### layout
 
-Contiene los archivos con los parámetros de estilo aplicados al HEADER **_header.scss**, FOOTER **_footer.scss**, BODY **_bbody.scss** y los aplicados a la página de erro 404 **_error404.scss**
-
+Contiene los archivos con los parámetros de estilo aplicados al HEADER **_header.scss**, FOOTER **_footer.scss** y BODY **_bbody.scss** 
 
